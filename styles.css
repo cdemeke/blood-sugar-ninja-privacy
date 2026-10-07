@@ -880,3 +880,9 @@ a {
     margin-left: 0;
   }
 }
+
+@media (max-width: 480px) {
+  .site-header .nav-cta {
+    display: none;
+  }
+}
