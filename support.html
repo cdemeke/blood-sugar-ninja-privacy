@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Support — Blood Sugar Ninja</title>
-  <meta name="description" content="Get help with Blood Sugar Ninja: connecting Dexcom Share, demo mode, units, and data questions.">
+  <meta name="description" content="Get help with Blood Sugar Ninja: connecting Dexcom Share or LibreLinkUp, optional belt backup, account deletion, and demo mode.">
   <meta name="theme-color" content="#f5efe3">
   <link rel="icon" href="assets/favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -45,24 +45,27 @@
     <p>Your credentials stay in the iOS Keychain on your device and are sent
     only to Dexcom. See the <a href="privacy.html">privacy policy</a>.</p>
 
-    <h2>No Dexcom? Use demo mode</h2>
+    <h2>Connecting FreeStyle Libre</h2>
+    <p>Use the <strong>FreeStyle Libre</strong> tab during setup or in Settings. Sign in with your LibreLinkUp follower email and password, then explicitly choose the shared connection for your own sensor. In the official LibreLinkUp app, first accept its sharing invitation and complete email verification or any required consent.</p>
+    <p>Credentials are stored in a separate iOS Keychain entry and sent directly to Abbott over HTTPS. If the selected connection disappears, reconnect and choose it again. The app will not choose a different person’s sensor automatically.</p>
+    <h2>Use demo mode without a CGM</h2>
     <p>Choose “Skip · try a demo” during setup to explore with sample readings.
     Demo readings are simulated and are not your personal glucose readings.</p>
 
     <h2>Readings look stale</h2>
     <p>The app shows how old the latest reading is. If it falls behind, check
-    that the Dexcom app itself is receiving data and that Share is still
-    enabled, then pull to refresh.</p>
+    that your sensor’s official app is receiving data and sharing is still enabled, then refresh in Blood Sugar Ninja. Readings can be delayed or unavailable. Use your CGM or meter for care decisions.</p>
 
     <h2>Units</h2>
     <p>Both mg/dL and mmol/L are supported — switch any time in Settings.</p>
 
-    <h2>Deleting your data</h2>
-    <p>Disconnect Dexcom in Settings to remove saved Keychain credentials.
-    Deleting the app removes its local database, but offloading it does not,
-    and deleting an app alone may leave Keychain entries. Device backups may
-    retain data according to your Apple backup settings. See the
-    <a href="privacy.html">privacy policy</a> for optional analytics and deletion requests.</p>
+    <h2>Optional sign-in and belt backup</h2>
+    <p>You can play without an Apple or Google account. Optional sign-in and a separate backup consent let you save belt progress to your account and restore it on another device. Glucose readings, guesses, symptoms and Insights history stay on this phone. Signing in alone does not enable backup.</p>
+    <p>Settings shows your backup status. If backup pauses, your progress remains local; return with an internet connection to retry. Signing out returns to guest belt progress. The phone’s real glucose and guess journal stays visible across signed-in accounts, so use care when sharing a phone.</p>
+    <h2>Deleting an account and cloud belt progress</h2>
+    <p>In Settings, choose <strong>Delete account</strong>, confirm <strong>Delete account and belt progress</strong>, and reauthenticate with the same Apple or Google identity. This removes the account and its cloud and local belt progress. It retains this phone’s glucose and guess journal. If deletion is interrupted, follow the retry message in Settings; signing out does not delete the cloud backup.</p>
+    <h2>Disconnecting a sensor and removing local history</h2>
+    <p>Choose <strong>Disconnect Account</strong> in Settings to remove the selected Dexcom or LibreLinkUp credentials and return to demo mode. Disconnecting does not erase saved guesses. Deleting the app removes its local database, but offloading it does not, and deleting an app alone may leave Keychain entries. The app marks its glucose and guess database as excluded from system backups; preferences may still be backed up. Manage existing backups from earlier versions through Apple’s settings. See the <a href="privacy.html">privacy policy</a> for optional analytics and deletion requests.</p>
 
     <h2>Requirements</h2>
     <p>iPhone running iOS 17 or later.</p>
