@@ -6,7 +6,7 @@ const APP_STORE_LIVE = false;
 const APP_STORE_URL = "https://apps.apple.com/us/app/id6772038196";
 
 document.querySelectorAll("[data-app-store]").forEach((a) => {
-  a.href = APP_STORE_LIVE ? APP_STORE_URL : "index.html#availability";
+  a.href = APP_STORE_LIVE ? APP_STORE_URL : "/#availability";
   if (!APP_STORE_LIVE) {
     const label = a.querySelector(".small");
     if (label) label.textContent = "Coming soon to the";
